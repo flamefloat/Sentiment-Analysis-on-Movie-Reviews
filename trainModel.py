@@ -48,7 +48,7 @@ def train_model(model, train_loader):
     print('Trained neural network model has been saved\n')
 
 if __name__ == "__main__":
-    model = SAmodel()
+    model = SAmodel().to(DEVICE)
     print('loading train data...')
     Phrase_Set = torch.load(train_data_tensor_path)
     Phrase_Len_Set = torch.load(Phrase_Len_Set_path)

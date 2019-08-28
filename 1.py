@@ -18,7 +18,15 @@ import matplotlib.pyplot as plt
 #word = glove.loc['the'].tolist()
 #a = torch.Tensor(word)
 #print(a.size(),a)
-a = 'C:/Users/MH/Desktop/MyCode/NLP/glove.840B.300d'
-b = '/go.txt'
-c = a+b
-print(c)
+#train_data = pd.read_csv('C:/Users/MH/Desktop/MyCode/NLP/Sentiment-Analysis-on-Movie-Reviews/data/train.tsv',sep='\t', nrows=5)
+#print(train_data)
+#a = train_data['Phrase']
+#print('len_a:',len(a))
+
+def f(isa = True):
+    a = 3
+    if isa:
+        a = a+1
+    print(a)
+
+f(isa = False)
