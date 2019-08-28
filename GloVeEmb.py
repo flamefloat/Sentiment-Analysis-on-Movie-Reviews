@@ -24,7 +24,6 @@ def token2vector(train_data, glove):
         list_Phrase_Set = Phrase_Set[i].split(' ')
         for j in range(Phrase_Len_Set[i]): # seq_len
             train_data_tensor[i,j,:] = torch.tensor(glove.loc[list_Phrase_Set[j]].tolist()) # dim = 300
-    torch
     Phrase_Len_Set = torch.tensor(Phrase_Len_Set)
     Sentiment_Set = torch.tensor(Sentiment_Set)
     return train_data_tensor, Phrase_Len_Set, Sentiment_Set #[batch, max_len, dim], [bath], [bath]
