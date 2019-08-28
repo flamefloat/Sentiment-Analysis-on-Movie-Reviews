@@ -4,9 +4,9 @@
 import numpy as np
 import torch
 import pandas as pd
-train_data = pd.read_csv('C:/Users/MH/Desktop/MyCode/NLP/Sentiment-Analysis-on-Movie-Reviews/data/train.tsv',sep='\t')
-glove = pd.read_csv('C:/Users/MH/Desktop/MyCode/NLP/glove.840B.300d/go.txt', sep=' ', header = None, index_col = 0)
-root_path = 'C:/Users/MH/Desktop/MyCode/NLP/Sentiment-Analysis-on-Movie-Reviews'
+root_path = 'C:/**/NLP/Sentiment-Analysis-on-Movie-Reviews'
+train_data = pd.read_csv( root_path + '/data/train.tsv',sep='\t')
+glove = pd.read_csv( root_path + '/NLP/glove.840B.300d/go.txt', sep=' ', header = None, index_col = 0)
 train_data_tensor_path = root_path + '/train_data_tensor.pth'
 Phrase_Len_Set_path = root_path + '/Phrase_Len_Set.pth'
 Sentiment_Set_path = root_path + '/Sentiment_Set.pth'
