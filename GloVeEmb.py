@@ -26,7 +26,7 @@ def token2vector(data, glove, isTrian_data = True):
     for i in range(batch):
         Phrase_Len_Set.append(len(Phrase_Set[i].split(' ')))
     max_len = max(Phrase_Len_Set)
-    data_tensor = torhc.zeros(batch, max_len, 300)
+    data_tensor = torch.zeros(batch, max_len, 300)
     for i in range(batch): # batch
         list_Phrase_Set = Phrase_Set[i].split(' ')
         for j in range(Phrase_Len_Set[i]): # seq_len
